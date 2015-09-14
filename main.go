@@ -20,6 +20,7 @@ func main() {
 		conn, err := l.Accept()
 		if err != nil {
 			fmt.Println(err)
+			continue
 		}
 
 		fmt.Println("connection accepted")
